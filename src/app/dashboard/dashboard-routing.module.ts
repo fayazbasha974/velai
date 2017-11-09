@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { DashboardComponent } from './dashboard.component';
 
 const routes: Routes = [
@@ -11,4 +10,10 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DashboardRoutingModule { }
+export class DashboardRoutingModule { 
+  foods = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];
+}

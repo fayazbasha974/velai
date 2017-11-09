@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-.dashboard_main{
+/*.dashboard_main{
     position: relative;
     background-color: #eee;
     float: left;
@@ -9,7 +9,6 @@
 }
 .dashboard_first{
     width: 38%;
-    /* position: absolute; */
     padding: 0% 1% 0% 1%;
     border: 1px solid rgba(0,0,0,0.08);
     min-height: 80px;
@@ -17,10 +16,7 @@
 }
 .dashboard_second{
     width: 57%;
-    /* position: absolute;
-    left: 40%;   */
     border: 1px solid rgba(0,0,0,0.08);
-    /* border: 1px solid black;  */
     min-height: 80px; 
     padding: 0% 1% 0% 1%;  
     float: left;  
@@ -40,7 +36,7 @@
 .dashboard_second .spanchild{
     margin-top: 5%;
     float: right !important;
-} 
+} */
  /* i{
     font-size: 35px !important;
 } */
@@ -60,3 +56,7 @@
     width: 58%;
     padding: 0% 1% 0% 1%;
 } */
+body {
+    margin: 0px; 
+    padding: 0px;
+}

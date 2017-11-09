@@ -1,0 +1,107 @@
+.container {
+    width: 100%;
+    margin: 0px auto;
+    display: table;
+}
+.dashboard-main {
+    float: left;
+    width: 100%;
+    border: 1px solid #ababab;
+    height: 100vh;
+}
+.dashboard-main .left-sidebar {
+    width: 28%;
+    float: left;
+    border-right: 1px solid #ababab;
+    height: 100vh;
+}
+.dashboard-main .right-sidebar {
+    width: 71.9%;
+    float: left;
+}
+.dashboard-main mat-card {
+    box-shadow: none;
+    border: none;
+    padding: 5px;
+}
+.userprofile-main {
+    width: 100%;
+    float: left;
+}
+.userprofile-main .user-profile, .userprofile-main .user-name, .userprofile-main .user-status {
+    float: left;
+}
+.userprofile-main .user-name {
+    padding: 6px 10px;
+}
+.user-time {
+    width: 27%;
+    padding-top: 5px;
+}
+.userprofile-main .user-name p, .userprofile-main .user-time p {
+     margin: 0px;
+     padding: 2px;
+     font-size: 15px;
+    letter-spacing: 0.15px;
+ }
+.userprofile-main .user-icons, .userprofile-main .user-time {
+    float: right;
+}
+.user-profile .mat-card-image {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    border-radius: 50%;
+}
+.user-icons {
+    float: right;
+    padding: 10px;
+}
+mat-card.mat-border {
+    border-bottom: 1px solid #ababab !important;
+    min-height: 54px;
+}
+.left-section-3 {
+    min-height: 90px;
+    border-bottom: 1px solid #ababab !important;
+}
+.userprofile-left-main {
+    float: left;
+    width: 100%;
+}
+.userprofile-left-main .user-profile {
+    float: left;
+    width: 18%;
+}
+.userprofile-left-main .user-name {
+    float: left;
+    width: 57%;
+}
+.userprofile-left-main .user-name p, .userprofile-left-main .user-time p {
+    margin: 0px;
+    padding: 2px;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+}
+.userprofile-left-main .user-time {
+    float: left;
+    width: 25%;
+}
+.left-section-2 {
+    min-height: 40px;
+    border-bottom: 1px solid #ababab !important;
+}
+.left-search-main {
+    width: 100%;
+    float: left;
+}
+.left-search-main .user-filter {
+    float: left;
+    width: 10%;
+}
+.left-search-main .user-search {
+    float: left;
+}
+.left-search-main .user-filter i {
+    padding-top: 10px;
+}

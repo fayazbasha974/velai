@@ -1,4 +1,76 @@
-<div class="dashboard_main">
+<div class="container">
+  <div class="dashboard-main">
+      <div class="left-sidebar">
+        <mat-card class="mat-border">
+          <div class="userprofile-main">
+            <div class="user-profile">
+                <img mat-card-image src="../../assets/images/peepaltech.jpg">
+            </div>
+            <div class="user-icons">
+                <i class="material-icons">person</i>
+                <i class="material-icons">payment</i>
+                <i class="material-icons">notifications</i>
+                <i class="material-icons">more_vert</i>
+            </div>
+          </div>
+        </mat-card>
+        <mat-card class="left-section-2">
+          <div class="left-search-main">
+            <div class="user-filter">
+                <i class="material-icons">filter_list</i>
+            </div>
+            <div class="user-search">
+                search input 
+            </div>
+          </div>
+        </mat-card>
+        <mat-card class="left-section-3">
+          <div class="userprofile-left-main">
+            <div class="user-profile">
+                <img mat-card-image src="../../assets/images/peepaltech.jpg">
+            </div>
+            <div class="user-name">
+                <p class="candidate-name">Naga Chaitanya</p>
+                <p class="candidate-name">film actor</p>
+                <p class="candidate-name">Naga Chaitanya</p>
+            </div>
+            <div class="user-time">
+                <p class="candidate-time">12:00 AM</p>
+                <i class="material-icons">star_rate</i>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+      <div class="right-sidebar">
+        <mat-card class="mat-border">
+          <div class="userprofile-main">
+            <div class="user-profile">
+                <img mat-card-image src="../../assets/images/peepaltech.jpg">
+            </div>
+            <div class="user-name">
+                <p class="candidate-name">Naga Chaitanya</p>
+                <p class="candidate-status">Indian film actor who works in Telugu cinema.</p>
+            </div>
+            <div class="user-status">
+                <mat-form-field>
+                  <mat-select placeholder="Status">
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                      {{ food.viewValue }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="user-icons">
+                <i class="material-icons">search</i>
+                <i class="material-icons">more_vert</i>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+  </div>
+</div>
+
+<!--<div class="dashboard_main">
   <div class="dashboard_first">
     <img src="../../assets/images/peepaltech.jpg" height="50px" width="50px">
     <span style="float:right!important;">
@@ -25,4 +97,4 @@
   <div class="second_main_secondchild">
 
   </div>
-</div>
+</div>-->
