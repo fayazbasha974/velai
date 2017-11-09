@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 /*.dashboard_main{
     position: relative;
     background-color: #eee;
@@ -59,4 +59,22 @@
 body {
     margin: 0px; 
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+body, .container, .mat-card {
+    background-color: #eeeeee;
+    font-family: 'Open Sans', sans-serif;
+}
+.mat-card {
+    display: flex !important;
+}
+.panel-chat iframe::-webkit-scrollbar {
+    width: 0.4em;
+}
+.panel-chat iframe::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.panel-chat iframe::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
 }
