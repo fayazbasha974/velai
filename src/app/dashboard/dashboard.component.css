@@ -16,12 +16,15 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     height: 100vh;
+    position: fixed;
 }
 .dashboard-main .right-sidebar {
     width: 70%;
     float: left;
     height: 100%;
     background-color: rgba(229, 221, 213, 0.7);
+    left: 30%;
+    position: fixed;
 }
 .dashboard-main mat-card {
     box-shadow: none;
@@ -32,6 +35,11 @@
     width: 100%;
     float: left;
     padding: 5px 10px 0px 10px;
+}
+.leftmenu-scroll {
+    height: 84%;
+    overflow-y: scroll;
+    padding-bottom: 15px;
 }
 .userprofile-main .user-profile, .userprofile-main .user-name, .userprofile-main .user-status {
     float: left;
