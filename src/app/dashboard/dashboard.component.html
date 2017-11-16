@@ -30,15 +30,15 @@
           </div>
         </mat-card>
         <div class="leftmenu-scroll">
-          <mat-card class="left-section-3">
+          <mat-card class="left-section-3" *ngFor="let profile of profiles" (click)="setCurrentProfile(profile)">
             <div class="userprofile-left-main">
               <div class="user-profile">
-                  <img mat-card-image src="../../assets/images/peepaltech.jpg">
+                  <img mat-card-image [src]="profile.image">
               </div>
               <div class="user-name">
-                  <p class="candidate-name">Naga Chaitanya</p>
-                  <p class="candidate-location">film actor</p>
-                  <p class="candidate-status">Naga Chaitanya</p>
+                  <p class="candidate-name">{{profile.name}}</p>
+                  <p class="candidate-location">{{profile.location}}</p>
+                  <p class="candidate-status">{{profile.status}}</p>
               </div>
               <div class="user-time">
                   <p class="candidate-time">12:00 AM</p>
@@ -166,7 +166,7 @@
                   <p class="candidate-location">film actor</p>
                   <p class="candidate-status">Naga Chaitanya</p>
               </div>
-              <div class="user-time">
+              <div class="user-time"> 
                   <p class="candidate-time">12:00 AM</p>
                   <p class="candidate-star">
                     <i class="material-icons">star_rate</i>
@@ -243,7 +243,7 @@
         </mat-card>
         <mat-card class="chatbox-main">
           <div class="panel-chat">
-            <iframe src="https://www.ogm.market/files/OGM-LTD_termsandconditions.pdf" frameborder="0" allowfullscreen></iframe>
+            <iframe [src]="currentProfile.resume | safe" frameborder="0" allowfullscreen></iframe>
           </div>
         </mat-card>
 

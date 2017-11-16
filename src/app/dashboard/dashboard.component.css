@@ -177,6 +177,12 @@ mat-card.mat-border {
     flex-direction: column;
     overflow: hidden;
     position: relative;
+    height: 90%;
+    overflow-y: scroll;
+}
+.chatbox-main .panel-chat {
+    height: 100%;
+    overflow-y: scroll;
 }
 .panel-chat iframe { 
     height: 100%;
